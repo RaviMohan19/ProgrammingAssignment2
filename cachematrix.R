@@ -1,12 +1,12 @@
-#Author : Ravi M B 
-#Purpose : Function created as a part of course assingment on Coursera 
-#The Following function creates
+# Author : Ravi M B 
+# Purpose : Function created as a part of course assingment on Coursera 
+# The Following function creates
 # a special function Matrix object
 # the solve function can cache its inverse when necessary
-Programming Assignment 2
+# Programming Assignment 2
 
 
-#Function for creating a special function that could be used for caching the response for evaluating matrix inverse
+# Function for creating a special function that could be used for caching the response for evaluating matrix inverse
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getInverse = getInverse)
 }
 
-#Function for evaluating  the inverse of the matrix that is returned by function makeCacheMatrix 
+# Function for evaluating  the inverse of the matrix that is returned by function makeCacheMatrix 
 
 cacheSolve <- function(x, ...) {
         
