@@ -2,7 +2,8 @@
 #Purpose : Function created as a part of course assingment on Coursera 
 #The Following function creates
 # a special function Matrix object
-# that can cache its inverse
+# the solve function can cache its inverse when necessary
+# Programming Assignment 2
 
 
 #Function for creating a special function that could be used for caching the response for evaluating matrix inverse
@@ -14,6 +15,8 @@ makeCacheMatrix <- function(x = matrix()) {
                 x <<- y
                 inv <<- NULL
         }
+        
+        #Create the components for the matrix
         get <- function() x
         setInverse <- function(inverse) inv <<- inverse
         getInverse <- function() inv
@@ -28,6 +31,10 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         
         inv <- x$getInverse()
+        
+        
+        # Check the relevant conditions and components
+        # Compute the inverse of the matrix and cache any relevant responses 
         
         if (!is.null(inv)) {
                 message("getting cached data")
